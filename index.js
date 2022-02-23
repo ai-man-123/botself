@@ -54,10 +54,10 @@ const TobzKey = 'BotWeA'
 
 banChats = true
 offline = false
-targetpc = '6288213292687'
-owner = '6281319944917'
-fake = 'Arasya - Self'
-owner = '6281319944917'
+targetpc = '60102810046'
+owner = '60102810046'
+fake = 'Aiman - Self'
+owner = '60102810046'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -359,7 +359,7 @@ Prefix : 「 MULTI-PREFIX 」
 ║┃ *${prefix}term* <code>
 ║┃ _x_ <code>
 ║┗━━━━⊱
-╚═══❏ *BOTZ - SELF* ❏══❍`
+╚═══❏ *Aiman - SELF* ❏══❍`
         	fakestatus(menu)
            	break
     case 'on':
@@ -396,13 +396,13 @@ Prefix : 「 MULTI-PREFIX 」
             case 'admin':
             case 'owner':
             case 'creator':
-                  syaa.sendMessage(from, {displayname: "Riyan BOTZ", vcard: vcard}, MessageType.contact, { quoted: mek})
+                  syaa.sendMessage(from, {displayname: "Aiamn ", vcard: vcard}, MessageType.contact, { quoted: mek})
                   syaa.sendMessage(from, 'Tuh kontak Ownerku ,Jangan Lupa Save Ya :v',MessageType.text, { quoted: mek} )
                   ini_buffer = await getBuffer("https://i.ibb.co/FgCff1t/20210406-154034.png")
-                  syaa.sendMessage(from, ini_buffer, MessageType.image, {quoted: mek, caption: '*SUBSCRIBE:*\n*https://youtube.com/channel/UCnOq-coEU87qbmzS5Wh-XHA*'})
+                  syaa.sendMessage(from, ini_buffer, MessageType.image, {quoted: mek, caption: '*SUBSCRIBE:*\n*https://youtube.com/channel*'})
                   break
     case 'kontag':
-            if (!mek.key.fromMe) return reply('SELF-BOT')
+            if (!mek.key.fromMe) return reply('SELF-Aiman')
             pe = args.join('')
             entah = pe.split('|')[0]
             nah = pe.split('|')[1]
@@ -526,7 +526,7 @@ Prefix : 「 MULTI-PREFIX 」
             syaa.sendMessage(from, `${bot}`, text, {quoted: { key: { fromMe: false, participant: `${mentioned}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target}` }}})
             break
     case 'settarget':
-            if(!q) return reply(`${prefix}settarget 628xxxxx`)
+            if(!q) return reply(`${prefix}settarget 6010+++`)
             targetpc = args[0]
             fakegroup(`Succes Mengganti target fitnahpc : ${targetpc}`)
             break
@@ -658,8 +658,8 @@ Prefix : 「 MULTI-PREFIX 」
             encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		    media = await syaa.downloadAndSaveMediaMessage(encmedia)
             anu = args.join(' ').split('|')
-            satu = anu[0] !== '' ? anu[0] : `Arasyaa`
-            dua = typeof anu[1] !== 'undefined' ? anu[1] : `@sofunsyabi.id`
+            satu = anu[0] !== '' ? anu[0] : `Aiman`
+            dua = typeof anu[1] !== 'undefined' ? anu[1] : `wa.me/+60102810046`
             require('./lib/fetcher.js').createExif(satu, dua)
 			require('./lib/fetcher.js').modStick(media, syaa, mek, from)
 			break
